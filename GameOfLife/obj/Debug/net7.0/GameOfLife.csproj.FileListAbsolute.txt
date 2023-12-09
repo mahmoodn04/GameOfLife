@@ -1,0 +1,12 @@
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\bin\Debug\net7.0\GameOfLife.deps.json
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\bin\Debug\net7.0\GameOfLife.dll
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\bin\Debug\net7.0\GameOfLife.pdb
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.csproj.AssemblyReference.cache
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.AssemblyInfoInputs.cache
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.AssemblyInfo.cs
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.csproj.CoreCompileInputs.cache
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.dll
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\refint\GameOfLife.dll
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\GameOfLife.pdb
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLife\obj\Debug\net7.0\ref\GameOfLife.dll

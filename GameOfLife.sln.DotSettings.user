@@ -1,0 +1,91 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3fa31014_002D415e_002D48a9_002D8028_002Df05752befc91/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLife.Tests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5468487b_002Dcca5_002D4951_002D9dd2_002D4f3f6ee693c3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7ebbd7b5_002Da795_002D42d1_002D89ee_002Dbdd7bfa44489/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLife.Tests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83cdf70a_002D28a3_002D492d_002D9a13_002D929d96e89da8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=908ff7ff_002D1fcb_002D4404_002Dbf18_002D69f3dcfa085e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=93f7a470_002D1cf9_002D4806_002Db16b_002D2879279bdba0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;GameOfLifeTests&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLifeTests" Presentation="&amp;lt;GameOfLifeTests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ab8d5579_002Df2b9_002D424b_002D95b1_002D7a35ddd7d191/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #9" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=af29942d_002Dcda6_002D49f7_002D85d4_002D9c31182bd6f0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldDeadIfOnlyOne" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLife.Tests.GameOfLifeTests.ShouldDeadIfOnlyOne&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c30af2bc_002D1f11_002D4031_002D9ea0_002D25a89460cc88/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c55ee9e0_002D0c55_002D4ca0_002Db365_002D67a09daf7b90/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d17c8555_002D09eb_002D4b81_002D816a_002D8d6d4182a4d2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;GameOfLifeTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLifeTests" Presentation="&amp;lt;GameOfLifeTests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d3b21565_002Ddc4d_002D4fcb_002D81fd_002D6d7bf97d645b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebef852f_002D6caa_002D4eda_002D93d8_002D22709227e3a4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f8b5812c_002D4a4f_002D4963_002Daf98_002D22a0296aaa61/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLife.Tests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa356e34_002D1455_002D4bd3_002Dac9d_002Dfaee74546e3a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #8" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd5fff89_002Db32a_002D4406_002Dbed4_002D68f5d331ea80/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd80e19b_002D092d_002D45e8_002Db506_002D502a652e0df6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldDeadIfOnlyOne&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnAnotherDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenMoreThanThreeLivesNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldStaysLifeWhenItHasTwonieghbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnLivesWhenItHasThreeNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnNewNeighborsOfOldCellsInBoard&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnCounterOfCellsNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldTranslateOnXAbices&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnMaxAndMinOfYX&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
