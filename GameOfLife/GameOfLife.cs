@@ -7,6 +7,7 @@ public class GameOfLife
     private const int GRID = 50;
     private const int HGRID = GRID / 2;
     public int[,] BoardOfLives;
+    public int tickCount = 0;
 
     public GameOfLife()
     {
@@ -24,11 +25,17 @@ public class GameOfLife
         {
             return this;
         }
-        
-        if (life < 2 || life > 3)
-            BoardOfLives[x, y] = 0;
-        else if (life == 3 && BoardOfLives[x, y] == 0) BoardOfLives[x, y] = 1;
 
+        if (life < 2 || life > 3)
+        {
+            BoardOfLives[x, y] = 0;
+            tickCount++;
+        }
+        else if (life == 3 && BoardOfLives[x, y] == 0)
+        {
+            BoardOfLives[x, y] = 1;
+            tickCount++;
+        }
 
         return this;
     }
@@ -36,9 +43,9 @@ public class GameOfLife
     public int Counter(int x, int y)
     {
         var counter = 0;
-        for (var i = Math.Max(0, y - 1); i <= Math.Min(GRID - 1, y + 1); i++)
+        for (var i = Math.Max(0, y - 1); i < Math.Min(GRID, y + 2); i++)
         {
-            for (var j = Math.Max(0, x - 1); j <= Math.Min(GRID - 1, x + 1); j++)
+            for (var j = Math.Max(0, x - 1); j < Math.Min(GRID, x + 2); j++)
             {
                 if (BoardOfLives[i, j] == 1 && (j != y || i != x))
                 {

@@ -27,3 +27,4 @@ C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\MyGame\bin\Debug\n
 C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\MyGame\bin\Debug\net7.0\GameOfLife.pdb
 C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\MyGame\bin\Debug\net7.0\MonoGame.Extended.dll
 C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\MyGame\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\MyGame\bin\Debug\net7.0\Content\Arial.xnb

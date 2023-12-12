@@ -19,6 +19,11 @@
     &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8a106aff_002Df2b0_002D4b27_002Da58b_002Df9f619c86662/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GameOfLifeTests #10" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=908ff7ff_002D1fcb_002D4404_002Dbf18_002D69f3dcfa085e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
@@ -72,20 +77,11 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd5fff89_002Db32a_002D4406_002Dbed4_002D68f5d331ea80/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd80e19b_002D092d_002D45e8_002Db506_002D502a652e0df6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd80e19b_002D092d_002D45e8_002Db506_002D502a652e0df6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldDeadIfOnlyOne&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnAnotherDeadWhenLessThanTwoLivesNeighbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnDeadWhenMoreThanThreeLivesNeighbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldStaysLifeWhenItHasTwonieghbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnLivesWhenItHasThreeNeighbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnNewNeighborsOfOldCellsInBoard&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnCounterOfCellsNeighbors&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldTranslateOnXAbices&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests.ShouldReturnMaxAndMinOfYX&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

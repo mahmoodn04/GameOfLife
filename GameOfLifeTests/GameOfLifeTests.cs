@@ -190,7 +190,8 @@ public class GameOfLifeTests
 
         var r = new ArrayList(); 
             r.Add(24);
-            r.Add(25);
+            r.Add(26);
+            r.Add(24);
             r.Add(26);
         Assert.Equal(r, board.MaxGrid());
     }
