@@ -134,7 +134,7 @@ public class GameOfLifeTests
         // Then
 
 
-        Assert.Equal(2, board.Counter(25, 25));
+        Assert.Equal(3, board.Counter(25, 25));
     }
 
     [Fact]
@@ -153,7 +153,7 @@ public class GameOfLifeTests
         // Then
 
 
-        Assert.Equal(3, board.Counter(26, 25));
+        Assert.Equal(3, board.Counter(25, 26));
     }
 
     [Fact]
@@ -175,7 +175,7 @@ public class GameOfLifeTests
         // Then
 
 
-        Assert.Equal(3, board.Counter(25, 25));
+        Assert.Equal(0, board.Counter(25, 25));
     }
     [Fact]
     public void ShouldReturnMaxAndMinOfYX()

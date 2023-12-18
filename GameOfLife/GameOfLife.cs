@@ -29,12 +29,11 @@ public class GameOfLife
         if (life < 2 || life > 3)
         {
             BoardOfLives[x, y] = 0;
-            tickCount++;
+            
         }
         else if (life == 3 && BoardOfLives[x, y] == 0)
         {
             BoardOfLives[x, y] = 1;
-            tickCount++;
         }
 
         return this;
@@ -43,16 +42,20 @@ public class GameOfLife
     public int Counter(int x, int y)
     {
         var counter = 0;
-        for (var i = Math.Max(0, y - 1); i < Math.Min(GRID, y + 2); i++)
+        for (var i = x - 1; i < x + 2 ; i++)
         {
-            for (var j = Math.Max(0, x - 1); j < Math.Min(GRID, x + 2); j++)
+            for (var j = y - 1; j < y + 2; j++)
             {
-                if (BoardOfLives[i, j] == 1 && (j != y || i != x))
+                if (i >= 0 && i <= 49 && j >= 0 && j <= 49)
                 {
-                    counter++;
+                    if (BoardOfLives[i, j] == 1 && (j != y || i != x))
+                    {
+                        counter++;
+                    }
                 }
             }
         }
+
         return counter;
     }
 
@@ -78,20 +81,32 @@ public class GameOfLife
 
     public GameOfLife Generate(int numberOfGenerations)
     {
-        for (var i = 0; i < numberOfGenerations; i++) Tick(25 + i, 25);
+        for (var gen = 0; gen < numberOfGenerations; gen++)
+        {
+            var newBoard = new int[GRID, GRID];
+            for (var i = 0; i < GRID; i++)
+            {
+                for (var j = 0; j < GRID; j++)
+                {
+                    newBoard[i, j] = Tick(i, j).BoardOfLives[i, j];
+                }
+            }
+
+            BoardOfLives = newBoard;
+        }
+
         return this;
     }
 
     public ArrayList MaxGrid()
     {
-        
         var resultx = new ArrayList();
         var resulty = new ArrayList();
 
 
-        for (int i = 0; i < GRID ; i++)
+        for (int i = 0; i < GRID; i++)
         {
-            for (int j = 0; j < GRID ; j++)
+            for (int j = 0; j < GRID; j++)
             {
                 if (BoardOfLives[i, j] == 1)
                 {
@@ -100,18 +115,19 @@ public class GameOfLife
                 }
             }
         }
+
         resultx.Sort();
         var MinX = resultx[0];
-        var MaxX = resultx[resultx.Count -1];
+        var MaxX = resultx[resultx.Count - 1];
         resulty.Sort();
         var MinY = resulty[0];
-        var MaxY = resulty[resulty.Count -1];
+        var MaxY = resulty[resulty.Count - 1];
         var result = new ArrayList();
         result.Add(MinX);
         result.Add(MaxX);
         result.Add(MinY);
         result.Add(MaxY);
-        
+
         return result;
     }
 }
