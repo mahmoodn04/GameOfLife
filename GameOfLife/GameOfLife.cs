@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
 
 namespace GameOfLife;
 
@@ -7,51 +11,68 @@ public class GameOfLife
     private const int GRID = 50;
     private const int HGRID = GRID / 2;
     public int[,] BoardOfLives;
-    public int tickCount = 0;
+    int[,] newBoardOfLives;
+
 
     public GameOfLife()
     {
         BoardOfLives = new int[GRID, GRID];
-
+        newBoardOfLives = new int[GRID, GRID];
         for (var x = 0; x < GRID; x++)
         for (var y = 0; y < GRID; y++)
             BoardOfLives[x, y] = 0;
     }
 
-    public GameOfLife Tick(int x, int y)
+    public void Tick(int x, int y)
     {
         var life = Counter(x, y);
-        if (life == 0 && BoardOfLives[x, y] == 0)
+
+        if (x >= GRID)
         {
-            return this;
+            y = GRID - y;
+            x = 0;
+            
         }
 
-        if (life < 2 || life > 3)
+        if (y >= GRID)
         {
-            BoardOfLives[x, y] = 0;
             
+            x = GRID - x;
+            y = 0;
+        }
+        if (life == 0 && BoardOfLives[x, y] == 0)
+        {
+            newBoardOfLives[x, y] = BoardOfLives[x, y];
+        }
+
+        else if (life < 2 || life > 3)
+        {
+            newBoardOfLives[x, y] = 0;
         }
         else if (life == 3 && BoardOfLives[x, y] == 0)
         {
-            BoardOfLives[x, y] = 1;
+            newBoardOfLives[x, y] = 1;
         }
-
-        return this;
+        else
+        {
+            newBoardOfLives[x, y] = BoardOfLives[x, y];
+        }
+        
+        
     }
 
     public int Counter(int x, int y)
     {
         var counter = 0;
-        for (var i = x - 1; i < x + 2 ; i++)
+        var frontier = MaxGrid();
+
+        for (var i = Math.Max(0, x - 1); i <= Math.Min(GRID - 1, x + 1); i++)
         {
-            for (var j = y - 1; j < y + 2; j++)
+            for (var j = Math.Max(0, y - 1); j <= Math.Min(GRID - 1, y + 1); j++)
             {
-                if (i >= 0 && i <= 49 && j >= 0 && j <= 49)
+                if ((i != x || j != y) && BoardOfLives[i, j] == 1)
                 {
-                    if (BoardOfLives[i, j] == 1 && (j != y || i != x))
-                    {
-                        counter++;
-                    }
+                    counter++;
                 }
             }
         }
@@ -72,7 +93,6 @@ public class GameOfLife
 
     public GameOfLife SetBoardOfLives(int[,] newCells)
     {
-        Console.WriteLine($"{newCells}");
         for (var i = 0; i < 3; i++)
         for (var j = 0; j < 3; j++)
             BoardOfLives[i, j] = newCells[i, j];
@@ -83,17 +103,29 @@ public class GameOfLife
     {
         for (var gen = 0; gen < numberOfGenerations; gen++)
         {
-            var newBoard = new int[GRID, GRID];
-            for (var i = 0; i < GRID; i++)
+            var frontier = MaxGrid();
+
+            newBoardOfLives = new int[GRID, GRID];
+            for (var i = Math.Max(0, (int)frontier[0] - 1); i <= Math.Min(GRID - 1, (int)frontier[1] + 1); i++)
             {
-                for (var j = 0; j < GRID; j++)
+                for (var j = Math.Max(0, (int)frontier[2] - 1); j <= Math.Min(GRID - 1, (int)frontier[3] + 1); j++)
                 {
-                    newBoard[i, j] = Tick(i, j).BoardOfLives[i, j];
+                    Tick(i, j);
+                    
                 }
             }
+            
 
-            BoardOfLives = newBoard;
+            BoardOfLives = new int[GRID, GRID];
+            for (int i = 0; i < GRID; i++)
+            {
+                for (int j = 0; j < GRID; j++)
+                {
+                    BoardOfLives[i, j] = newBoardOfLives[i, j];
+                }
+            }
         }
+        
 
         return this;
     }
@@ -116,17 +148,27 @@ public class GameOfLife
             }
         }
 
-        resultx.Sort();
-        var MinX = resultx[0];
-        var MaxX = resultx[resultx.Count - 1];
-        resulty.Sort();
-        var MinY = resulty[0];
-        var MaxY = resulty[resulty.Count - 1];
         var result = new ArrayList();
-        result.Add(MinX);
-        result.Add(MaxX);
-        result.Add(MinY);
-        result.Add(MaxY);
+        if (resultx.Count == 0)
+        {
+            result.Add(0);
+            result.Add(0);
+            result.Add(0);
+            result.Add(0);
+        }
+        else
+        {
+            resultx.Sort();
+            var MinX = resultx[0];
+            var MaxX = resultx[resultx.Count - 1];
+            resulty.Sort();
+            var MinY = resulty[0];
+            var MaxY = resulty[resulty.Count - 1];
+            result.Add(MinX);
+            result.Add(MaxX);
+            result.Add(MinY);
+            result.Add(MaxY);
+        }
 
         return result;
     }

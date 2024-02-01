@@ -9,9 +9,9 @@ public class GameOfLifeTests
     public void ShouldDeadIfOnlyOne()
     {
         var board = new GameOfLife.GameOfLife();
-        board = board.CellsLives(1, 1);
+        board.CellsLives(1, 1);
         // When
-        board = board.Tick(25, 25);
+        board.Tick(25, 25);
 
         // Then
         Assert.Equal(0, board.Counter(25, 25));
@@ -26,7 +26,7 @@ public class GameOfLifeTests
         board = board.CellsLives(1, 1);
         board = board.CellsLives(1, 2);
         // When
-        board = board.Tick(25, 25);
+        board.Tick(25, 25);
         // Then
         Assert.Equal(1, board.Counter(25, 25));
     }
@@ -40,7 +40,7 @@ public class GameOfLifeTests
         board = board.CellsLives(1, 1);
         board = board.CellsLives(1, 0);
         // When
-        board = board.Tick(25, 25);
+        board.Tick(25, 25);
         // Then
         Assert.Equal(1, board.Counter(25, 25));
     }
@@ -57,7 +57,7 @@ public class GameOfLifeTests
         board = board.CellsLives(0, 1);
         board = board.CellsLives(0, 2);
         // When
-        board = board.Tick(25, 25);
+         board.Tick(25, 25);
         // Then
         Assert.Equal(4, board.Counter(25, 25));
     }
@@ -74,7 +74,7 @@ public class GameOfLifeTests
         board = board.CellsLives(1, 2);
 
         // When
-        board = board.Tick(25, 25);
+        board.Tick(25, 25);
         // Then
         Assert.Equal(3, board.Counter(25, 25));
     }
@@ -91,7 +91,7 @@ public class GameOfLifeTests
         board = board.CellsLives(1, 2);
 
         // When
-        board = board.Tick(25, 25);
+        board.Tick(25, 25);
         // Then
 
         Assert.Equal(3, board.Counter(25, 25));
@@ -194,5 +194,22 @@ public class GameOfLifeTests
             r.Add(24);
             r.Add(26);
         Assert.Equal(r, board.MaxGrid());
+    }
+    [Fact]
+    public void ShouldReturnCreateOscillator()
+    {
+        // Given
+        var board = new GameOfLife.GameOfLife();
+        board.CellsLives(1, 0);
+        board.CellsLives(1, 1);
+        board.CellsLives(1, 2);
+        // When
+        board.Generate(1);
+        // Then
+        Assert.Equal(1 , board.GetCells(1, 1));
+        Assert.Equal(1 , board.GetCells(0, 1));
+        Assert.Equal(1 , board.GetCells(2, 1));
+
+
     }
 }

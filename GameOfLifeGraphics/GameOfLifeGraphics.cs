@@ -13,7 +13,7 @@ public class GameOfLifeGraphics
 
         for (var i = 0; i < 20; i++)
         {
-            board = board.Tick(i % 10 + 20, 25);
+           board.Tick(i % 10 + 20, 25);
             CallCanva(board, i);
         }
     }
