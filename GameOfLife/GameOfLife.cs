@@ -26,39 +26,12 @@ public class GameOfLife
     public void Tick(int x, int y)
     {
         var life = Counter(x, y);
+        x = (x + GRID) % GRID;
+        y = (y + GRID) % GRID;
 
-        if (x >= GRID)
-        {
-            y = GRID - y;
-            x = 0;
-            
-        }
-
-        if (y >= GRID)
-        {
-            
-            x = GRID - x;
-            y = 0;
-        }
-        if (life == 0 && BoardOfLives[x, y] == 0)
-        {
-            newBoardOfLives[x, y] = BoardOfLives[x, y];
-        }
-
-        else if (life < 2 || life > 3)
-        {
-            newBoardOfLives[x, y] = 0;
-        }
-        else if (life == 3 && BoardOfLives[x, y] == 0)
-        {
-            newBoardOfLives[x, y] = 1;
-        }
-        else
-        {
-            newBoardOfLives[x, y] = BoardOfLives[x, y];
-        }
-        
-        
+        newBoardOfLives[x, y] = (life == 0 && BoardOfLives[x, y] == 0) ? BoardOfLives[x, y] :
+            (life < 2 || life > 3) ? 0 :
+            (life == 3 && BoardOfLives[x, y] == 0) ? 1 : BoardOfLives[x, y];
     }
 
     public int Counter(int x, int y)
