@@ -8,8 +8,8 @@ namespace GameOfLife;
 
 public class GameOfLife
 {
-    private const int GRID = 50;
-    private const int HGRID = GRID / 2;
+    public const int GRID = 85;
+    public const int HGRID = GRID / 2;
     public int[,] BoardOfLives;
     int[,] newBoardOfLives;
 
@@ -25,13 +25,16 @@ public class GameOfLife
 
     public void Tick(int x, int y)
     {
-        var life = Counter(x, y);
         x = (x + GRID) % GRID;
         y = (y + GRID) % GRID;
+        var life = Counter(x, y);
+       
 
         newBoardOfLives[x, y] = (life == 0 && BoardOfLives[x, y] == 0) ? BoardOfLives[x, y] :
             (life < 2 || life > 3) ? 0 :
-            (life == 3 && BoardOfLives[x, y] == 0) ? 1 : BoardOfLives[x, y];
+            (life == 3 && BoardOfLives[x, y] == 0 && x < GRID && y < GRID) ? 1 :
+            (x >= GRID) ? 0 :
+            (y >= GRID) ? 0 : BoardOfLives[x, y];
     }
 
     public int Counter(int x, int y)
@@ -39,9 +42,9 @@ public class GameOfLife
         var counter = 0;
         var frontier = MaxGrid();
 
-        for (var i = Math.Max(0, x - 1); i <= Math.Min(GRID - 1, x + 1); i++)
+        for (var i = Math.Max(0, (x - 1 + GRID) % GRID); i <= Math.Min(GRID - 1, (x + 1) % GRID); i++)
         {
-            for (var j = Math.Max(0, y - 1); j <= Math.Min(GRID - 1, y + 1); j++)
+            for (var j = Math.Max(0, (y - 1 + GRID) % GRID); j <= Math.Min(GRID - 1, (y + 1) % GRID); j++)
             {
                 if ((i != x || j != y) && BoardOfLives[i, j] == 1)
                 {
@@ -77,7 +80,7 @@ public class GameOfLife
         for (var gen = 0; gen < numberOfGenerations; gen++)
         {
             var frontier = MaxGrid();
-
+            
             newBoardOfLives = new int[GRID, GRID];
             for (var i = Math.Max(0, (int)frontier[0] - 1); i <= Math.Min(GRID - 1, (int)frontier[1] + 1); i++)
             {
@@ -89,7 +92,6 @@ public class GameOfLife
             }
             
 
-            BoardOfLives = new int[GRID, GRID];
             for (int i = 0; i < GRID; i++)
             {
                 for (int j = 0; j < GRID; j++)
@@ -144,5 +146,16 @@ public class GameOfLife
         }
 
         return result;
+    }
+
+    public void clear()
+    {
+        for (int i = 0; i < GRID; i++)
+        {
+            for (int j = 0; j < GRID; j++)
+            {
+                BoardOfLives[i, j] = 0;
+            }
+        }
     }
 }

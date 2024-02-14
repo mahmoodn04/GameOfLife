@@ -13,8 +13,8 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     GameOfLife.GameOfLife _board;
     SpriteFont _font;
-    private int i = -25;
-    private int j = -25;
+    private int i = -GameOfLife.GameOfLife.HGRID;
+    private int j = -GameOfLife.GameOfLife.HGRID;
 
 
     public Game1()
@@ -56,7 +56,6 @@ public class Game1 : Game
             Exit();
 
         base.Update(gameTime);
-        
     }
 
     protected override void Draw(GameTime gameTime)
@@ -67,11 +66,10 @@ public class Game1 : Game
         int cellSize = 10;
         int padding = 2;
 
-        var maxX = 24;
-        var maxY = 24;
+        var maxX = GameOfLife.GameOfLife.HGRID - 1;
+        var maxY = GameOfLife.GameOfLife.HGRID - 1;
         i++;
-        
-        
+        int[,] newBoardOfLives = new int[GameOfLife.GameOfLife.GRID, GameOfLife.GameOfLife.GRID];
 
         _board = _board.Generate(1);
 
@@ -81,19 +79,57 @@ public class Game1 : Game
             {
                 if (_board.GetCells(x, y) == 1)
                 {
-                    Rectangle destinationRectangle = new Rectangle(x * (cellSize + padding) + 320,
-                        y * (cellSize + padding) + 240, cellSize, cellSize);
+                    Rectangle destinationRectangle = new Rectangle(x * (cellSize + padding),
+                        y * (cellSize + padding) , cellSize, cellSize);
 
                     _spriteBatch.Draw(_cellTexture, destinationRectangle, Color.White);
                 }
             }
         }
 
-        _spriteBatch.DrawString(_font, $"Tick Count: {i} {j}", new Vector2(10, 10), Color.White);
+        for (int z = GameOfLife.GameOfLife.HGRID - 1; z < GameOfLife.GameOfLife.HGRID; z++)
+        {
+            if (_board.GetCells(GameOfLife.GameOfLife.HGRID - 1, z) == 1)
+            {
+                //for (int h = 0; h < 50; h++)
+                //{
+                //    for (int e = 0; e < 50; e++)
+                //    {
+                //        if (_board.BoardOfLives[h, e] == 1)
+                //        {
+                //
+                //            newBoardOfLives[50 - h, 50 - e] = _board.BoardOfLives[h, e];
+                //        }
+                //    }
+                _board.clear();
+
+                _board.CellsLives(0-10, 1-10);
+                _board.CellsLives(1-10, 2-10);
+                _board.CellsLives(2-10, 0-10);
+                _board.CellsLives(2-10, 1-10);
+                _board.CellsLives(2-10, 2-10);
+                break;
+            }
+        }
 
 
-        _spriteBatch.End();
+            //
+            //          for (int l = 0; l < 50; l++)                        
+            //          {                                                     
+            //              for (int n = 0; n < 50; n++)                    
+            //              {                                                 
+            //                  _board.BoardOfLives[l, n] = newBoardOfLives[l, n];   
+            //              }                                                 
+            //          }                                                     
+            //      }
+            //      
+             
 
-        base.Draw(gameTime);
+            _spriteBatch.DrawString(_font, $"Tick Count: {i}", new Vector2(10, 10), Color.White);
+
+
+            _spriteBatch.End();
+
+            base.Draw(gameTime);
+        }
     }
-}

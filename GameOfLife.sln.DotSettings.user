@@ -47,7 +47,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=93f7a470_002D1cf9_002D4806_002Db16b_002D2879279bdba0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;GameOfLifeTests&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\Users\Mahmood\Documents\Projects\GameOfLifeKata\GameOfLife\GameOfLifeTests" Presentation="&amp;lt;GameOfLifeTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96817cbe_002Dcfbb_002D42da_002Da192_002D07ab0ecd09af/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GameOfLifeTests #15" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96817cbe_002Dcfbb_002D42da_002Da192_002D07ab0ecd09af/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GameOfLifeTests #15" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
@@ -115,7 +115,7 @@
     &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd80e19b_002D092d_002D45e8_002Db506_002D502a652e0df6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd80e19b_002D092d_002D45e8_002Db506_002D502a652e0df6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnDeadWhenLessThanTwoLivesNeighbors #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::757B2735-D759-45E0-A717-5EB788682A91::net7.0::GameOfLifeTests.GameOfLifeTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;

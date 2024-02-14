@@ -212,4 +212,23 @@ public class GameOfLifeTests
 
 
     }
+  // [Fact]
+  // public void ShouldPassBoarderToTheOtherSide()
+  // {
+  //     // Given
+  //     var board = new GameOfLife.GameOfLife();
+  //     board.CellsLives(23, 24);
+  //     board.CellsLives(24, 25);
+  //     board.CellsLives(25, 23);
+  //     board.CellsLives(25, 24);
+  //     board.CellsLives(25, 25);
+  //     // When
+  //     board.Generate(1);
+  //     
+  //     // Then
+  //     Assert.Equal(1 , board.GetCells(0, 0));
+  //    
+  // 
+  // 
+  // }
 }
